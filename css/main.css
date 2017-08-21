@@ -8,7 +8,7 @@
 /*=============================================<<<<<*/
 body {
   font-family: Verdana, Arial, sans-serif;
-  color: #222222;
+  color: #373d3f;
 }
 
 h1, h2, h3, h4 {
@@ -20,12 +20,12 @@ p {
 }
 
 a {
-  color: #f27731;
+  color: #ef8641;
 }
 
 #header {
   height: 60px;
-  background: #170a48;
+  background: #0786a0;
 }
 
 #header #main-menu li {
@@ -44,5 +44,5 @@ a {
 
 #footer {
   height: 90px;
-  background-color: #ccf962;
+  background-color: #aebe37;
 }
