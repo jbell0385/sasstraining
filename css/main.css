@@ -1,31 +1,92 @@
-/*=============================================>>>>>
-= CSS Variables =
-===============================================>>>>>*/
-/*----------- COLORS -----------*/
-/*----------- FONTS -----------*/
-/*----------- SIZES -----------*/
-/*= End of CSS Variables =*/
-/*=============================================<<<<<*/
-body {
-  font-family: Verdana, Arial, sans-serif;
-  color: #373d3f;
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+a {
+  font-style: italic;
+  text-direction: #fff;
 }
 
-h1, h2, h3, h4 {
-  font-family: "Palatino Linotype", Georgia, serif;
+.error, .critical-error, .cta-button, .super-cta-button {
+  color: red;
+}
+
+.critical-error {
+  bottom: 1px solid red;
+  font-weight: bold;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #fff;
+  font-size: 1.125em;
+  background-color: #22222a;
+}
+
+@media only screen and (max-width: 960px) {
+  body {
+    font-size: 125%;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto", Georgia, serif;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
 }
 
 p {
-  font-family: Verdana, Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
 }
 
 a {
-  color: #ef8641;
+  color: #c24721;
+  color: #8779ff;
+}
+
+a:hover {
+  color: #812f16;
+}
+
+.sub-title {
+  font-style: italic;
+}
+
+.sub-title {
+  font-size: 1.25em;
+}
+
+.warning-button, .cta-button, .super-cta-button {
+  background-color: orange;
+  color: #fff;
+  padding: 8px 12px;
+}
+
+.warning-button:hover, .cta-button:hover, .super-cta-button:hover {
+  background-color: #ffb733;
+}
+
+.cta-button, .super-cta-button {
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.super-cta-button {
+  font-size: 1.25em;
 }
 
 #header {
+  border-radius: 8px;
+  border: 1px solid #999;
+  box-shadow: 2px 0px 4px #999, 1px 1px 6px #c24721;
+  -moz-box-shadow: 2px 0px 4px #999, 1px 1px 6px #c24721;
+  -webkit-box-shadow: 2px 0px 4px #999, 1px 1px 6px #c24721;
   height: 60px;
-  background: #0786a0;
+  background-color: #42424a;
 }
 
 #header #main-menu li {
@@ -34,6 +95,14 @@ a {
 
 #header #main-menu a {
   color: white;
+  border-bottom: 1px solid rgba(254, 254, 254, 0);
+  padding: 6px 8px;
+  transition: border-bottom 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+#header #main-menu a:hover {
+  border-bottom: 1px solid #fefefe;
 }
 
 #main {
@@ -42,7 +111,37 @@ a {
   margin-right: auto;
 }
 
+@media only screen and (max-width: 960px) {
+  #main {
+    width: auto;
+    max-width: 960px;
+  }
+}
+
+#main #content {
+  float: left;
+  width: 69.75%;
+}
+
+#main #sidebar {
+  float: right;
+  width: 23.25%;
+}
+
+#main #sidebar li {
+  list-style-type: none;
+  padding: 1em 1.25em;
+  border-bottom: 1px dashed #999;
+  color: #fff;
+}
+
+#main #sidebar li:hover {
+  background-color: #efefef;
+  color: #c24721;
+}
+
 #footer {
+  clear: both;
   height: 90px;
-  background-color: #aebe37;
+  background-color: #698932;
 }

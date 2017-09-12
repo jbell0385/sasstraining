@@ -1,0 +1,23 @@
+{
+  "name": "sasstraining",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbell0385/sasstraining.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbell0385/sasstraining/issues"
+  },
+  "homepage": "https://github.com/jbell0385/sasstraining#readme"
+}
